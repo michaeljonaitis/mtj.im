@@ -13,8 +13,10 @@ class BlogIndexPage(Page):
         FieldPanel('intro', classname="full")
     ]
 
+
 class BlogPage(Page):
     date = models.DateField("Post date")
+    category = models.CharField(max_length=250, null=True)
     intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
 
