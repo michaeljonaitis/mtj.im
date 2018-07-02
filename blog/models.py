@@ -27,6 +27,7 @@ class BlogPage(Page):
 
     content_panels = Page.content_panels + [
         FieldPanel('date'),
+        FieldPanel('category'),
         FieldPanel('intro'),
         FieldPanel('body', classname="full"),
     ]
